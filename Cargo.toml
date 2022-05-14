@@ -1,0 +1,17 @@
+[package]
+name = "vst_gui"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+vst = "0.2.1"
+parking_lot = "0.12.0"
+winapi = { version = "0.3.9", features = ["winuser"] }
+raw-window-handle = "0.4.2"
+gl = "0.14.0"
+glyph_brush = "0.7.4"
+vst_log = { path = "./vst_log" }
+[dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs.git"
